@@ -11,12 +11,12 @@
 （站长认证、生成App、布局设置、推送设置、统计分析）
 ![](https://github.com/BigAppOS/BigApp_Discuz_Android/blob/master/screenshots/1.png)
 ####b. 可配置项如下：
->>>
+>
 1、登录注册模式（原生登录、web登录、原生注册、web注册、允许客户端更换头像）  
 2、第三方登录开关（QQ登录、微信登录开关）  
 3、签到设置（APP签到设置）  
 4、高级DIY设置如下（APP设计器、样式设置）
->>>>
+>>
   ![](https://github.com/BigAppOS/BigApp_Discuz_Android/blob/master/screenshots/2.png)
 
 ##2. Android客户端配置项说明（请确保网站已安装bigapp插件）

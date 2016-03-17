@@ -29,7 +29,7 @@
 
 # 使用说明
 
-> 注: 请使用Android Studio开发工具，gralde脚本编译
+> 注：请使用Android Studio开发工具，gralde脚本编译
 
 > 注：本源码中不包含消息推送和版本更新功能。
 

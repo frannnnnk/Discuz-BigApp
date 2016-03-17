@@ -3,8 +3,9 @@
 ##1. 网站端事项
 
 ###A. 安装BigApp插件
->> 应用中心 -> 插件 -> 搜索bigapp -> 点击BigApp手机客户端 -> 安装应用即可
->> 安装步骤参考 [Bigapp安装方法](http://addon.discuz.com/?@bigapp.plugin.doc/install_step)
+    应用中心 -> 插件 -> 搜索bigapp -> 点击BigApp手机客户端 -> 安装应用即可
+    安装步骤参考 [Bigapp安装方法](http://addon.discuz.com/?@bigapp.plugin.doc/install_step)
+  
 ###B. BigApp配置
 ####a. 不可用配置项如下：
 （站长认证、生成App、布局设置、推送设置、统计分析）
@@ -18,9 +19,9 @@
 >>>>
   ![](https://github.com/BigAppOS/BigApp_Discuz_Android/blob/master/screenshots/2.png)
 
-##2. Android客户端配置说明
+##2. Android客户端配置项说明（请确保网站已安装bigapp插件）
 
-注意: 请使用Android Studio开发工具，gralde脚本编译
+（注意: 请使用Android Studio开发工具，gralde脚本编译）
 
 ###A. Clan\Clan\res\values\strings_config.xml文件
 >主要是一些app配置如下：

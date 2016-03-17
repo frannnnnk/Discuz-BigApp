@@ -3,8 +3,8 @@
 ##1. 网站端事项
 
 ###A. 安装BigApp插件
-    应用中心 -> 插件 -> 搜索bigapp -> 点击BigApp手机客户端 -> 安装应用即可
-    安装步骤参考 [Bigapp安装方法](http://addon.discuz.com/?@bigapp.plugin.doc/install_step)
+应用中心 -> 插件 -> 搜索bigapp -> 点击BigApp手机客户端 -> 安装应用即可
+安装步骤参考 [Bigapp安装方法](http://addon.discuz.com/?@bigapp.plugin.doc/install_step)
   
 ###B. BigApp配置
 ####a. 不可用配置项如下：

@@ -1,31 +1,43 @@
-# BigApp_Discuz_Android
+# 开源目的
 
-##1. 网站端事项
+通过使用该源码，开发者可以迅速地将Discuz论坛迁移到Android客户端中。不需要任何的开发工作即可拥有属于自己论坛的Android客户端
 
-###A. 安装BigApp插件
+# 准备工作
+
+在使用源码之前必须先在Discuz论坛中安装BigApp插件。
+
+#### 一、插件安装
+
 应用中心 -> 插件 -> 搜索bigapp -> 点击BigApp手机客户端 -> 安装应用即可
 
 安装步骤参考 [Bigapp安装方法](http://addon.discuz.com/?@bigapp.plugin.doc/install_step)
-  
-###B. BigApp配置
-####a. 不可用配置项如下：
-（站长认证、生成App、布局设置、推送设置、统计分析）
-![](https://github.com/BigAppOS/BigApp_Discuz_Android/blob/master/screenshots/1.png)
-####b. 可配置项如下：
->
-1、登录注册模式（原生登录、web登录、原生注册、web注册、允许客户端更换头像）  
-2、第三方登录开关（QQ登录、微信登录开关）  
-3、签到设置（APP签到设置）  
-4、高级DIY设置如下（APP设计器、样式设置）
->>
-  ![](https://github.com/BigAppOS/BigApp_Discuz_Android/blob/master/screenshots/2.png)
 
-##2. Android客户端配置项说明（请确保网站已安装bigapp插件）
+#### 二、配置插件
 
-（注意: 请使用Android Studio开发工具，gralde脚本编译）
+1、登录注册模式（原生登录、web登录、原生注册、web注册、允许客户端更换头像）
 
-###A. Clan\Clan\res\values\strings_config.xml文件
->主要是一些app配置如下：
+2、第三方登录开关（QQ登录、微信登录开关）
+
+3、签到设置（APP签到设置）
+
+4、高级DIY设置如下（APP设计器、样式设置）, 如图：
+
+![BigApp](./screenshots/2.png "BigApp")
+
+> 注：如下配置将不可用（站长认证、生成App、布局设置、推送设置、统计分析）, 如图：
+> ![BigApp](./screenshots/1.png "BigApp")
+
+# 使用说明
+
+> 注: 请使用Android Studio开发工具，gralde脚本编译
+
+> 注：本源码中不包含消息推送和版本更新功能。
+
+1、使用Android Studio导入项目
+
+2、在项目中找到 Clan\Clan\res\values\strings_config.xml文件，并进行配置
+
+> 配置项说明如下：
 
     <!-- 是否启用分享功能，1代表启用，其它代表不启用 -->
     <string name="is_use_share">1</string>
@@ -42,7 +54,10 @@
     <string name="api_url_base">http://bbs.bigappdemo.com/</string>
     <string name="api_url_path">api/mobile/iyz_index.php</string>
   
-###B. libs\ShareSDK\assets\ShareSDK.xml文件
->本app使用的是sharesdk第三方分享，请拷贝QQ、sina、微信开发者平台的key到此文件中。
+> 注：对于新浪、微信、QQ的应用信息设置，如果没有使用相关平台功能，可以不进行设置。
+  
+3、在项目中找到 libs\ShareSDK\assets\ShareSDK.xml文件，设置分享相关的key。
 
-###C. 本源码中不包含消息推送和版本更新功能。
+> 本app使用的是sharesdk第三方分享，请拷贝QQ、sina、微信开发者平台的key到此文件中。
+
+4、编译运行应用。

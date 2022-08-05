@@ -89,10 +89,7 @@ public class ActApplyFragment extends BaseFragment {
 
             case JoinFiledType.DATEPICKER:
                 break;
-
-
         }
-
     }
 
 

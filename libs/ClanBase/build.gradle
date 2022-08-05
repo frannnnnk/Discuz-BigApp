@@ -2,7 +2,7 @@ apply plugin: 'android-library'
 //apply plugin: 'android'
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
+    compile project(':ImageLib')
     compile project(':AppUtils')
     compile project(':ZUtils')
     compile 'com.android.support:support-v4:21.0.3'
@@ -31,17 +31,17 @@ android {
 //
 //        threeBodyRelease {
 //            signingConfig signingConfigs.threeBodyRelease
-//            proguardFiles getDefaultProguardFile('proguard-project.txt'), 'proguard-project.txt'
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-android.txt'
 //            minifyEnabled false
 //        }
 
         debug {
-            proguardFiles getDefaultProguardFile('proguard-project.txt'), 'proguard-debug.txt'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-debug.txt'
             minifyEnabled false
         }
 
         release {
-            proguardFiles getDefaultProguardFile('proguard-project.txt'), 'proguard-project.txt'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-android.txt'
             minifyEnabled true
         }
     }
@@ -58,7 +58,7 @@ android {
         }
 
         // Move the tests to tests/java, tests/res, etc...
-        instrumentTest.setRoot('tests')
+        androidTest.setRoot('tests')
 
         // Move the build types to build-types/<type>
         // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
